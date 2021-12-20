@@ -49,7 +49,10 @@ async function run() {
             const encodedPic = picData.toString('base64');
             const imgBuffer = Buffer.from(encodedPic, 'base64');
 
-
+            const pic2 = req.files.image2;
+            const picData2 = pic2.data;
+            const encodedPic2 = picData2.toString('base64')
+            const imgBuffer2 = Buffer.from(encodedPic2, 'base64')
 
             const service = {
                 name,
